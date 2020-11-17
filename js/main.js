@@ -13,22 +13,23 @@ const myApp = new Vue({
       'img/image3.jpg',
       'img/image4.jpg'
     ],
-    currentImg : 0
+    counter : 0,
+
   },
   methods:{
     slideNext: function(){
-      if(this.currentImg === this.imgSrc.length - 1){
-        this.currentImg = 0;
+      if(this.counter === this.imgSrc.length - 1){
+        this.counter = 0;
       } else {
-        this.currentImg++
+        this.counter++
       };
     },
     slidePrev: function(){
-      if(this.currentImg === 0){
-        this.currentImg = this.imgSrc.length - 1;
+      if(this.counter === 0){
+        this.counter = this.imgSrc.length - 1;
       } else {
-        this.currentImg--;
+        this.counter--;
       }
-    }
+    },
   }
 });
