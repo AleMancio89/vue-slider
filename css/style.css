@@ -1,3 +1,21 @@
 img{
   height: 500px;
 }
+
+.dot{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.active{
+  background-color: blue;
+}

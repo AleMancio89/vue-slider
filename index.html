@@ -28,9 +28,13 @@
         </div>
         <div class="row">
           <div class="col d-flex justify-content-center">
-            <select v-model="counter">
-              <option :value="n-1"v-for="n in imgSrc.length">{{ n }}</option>
-            </select>
+            <ul>
+              <li :value="n-1" v-for="n in imgSrc.length" @click="counter = n - 1">
+                <a href="#">
+                  <div :class= "{active:counter == n - 1}" class="dot"></div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

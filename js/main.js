@@ -29,7 +29,7 @@ const myApp = new Vue({
         this.counter = this.imgSrc.length - 1;
       } else {
         this.counter--;
-      }
+     }
     },
   }
 });
